@@ -1878,7 +1878,6 @@ section {
 
   .pricing-card.featured {
     transform: scale(1);
-    order: -1;
   }
 
   .stats-grid {

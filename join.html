@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Our Team — PureFlow | Earn Recurring Income in Water Filtration</title>
+  <meta name="description" content="Become a PureFlow rep and earn recurring monthly commissions selling residential and commercial water filtration systems across Utah's Wasatch Front.">
+  <meta property="og:title" content="Join Our Team — PureFlow">
+  <meta property="og:description" content="Earn recurring income selling water filtration. Residential and commercial opportunities across Utah.">
+  <link rel="canonical" href="https://pureflowut.com/join.html">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .join-hero {
+      background: linear-gradient(135deg, rgba(11,37,69,0.9), rgba(11,37,69,0.8), rgba(0,200,232,0.75)), url('images/hero-about.png') center/cover no-repeat;
+      color: #fff;
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+    .join-hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+    .join-hero p { font-size: 1.25rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto; }
+
+    .why-join { padding: 80px 0; background: #fff url('../images/water-bg-1.png') center/cover no-repeat; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px; }
+    .why-card {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 36px 28px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .why-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .why-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .why-card h3 { font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 10px; }
+    .why-card p { color: #475569; font-size: 0.95rem; line-height: 1.6; }
+
+    .story-section { padding: 80px 0; background: #f8f8f8; }
+    .story-content { max-width: 760px; margin: 0 auto; }
+    .story-content h2 { font-size: 2.25rem; font-weight: 800; color: #0f172a; margin-bottom: 24px; text-align: center; }
+    .story-content p { color: #374151; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; }
+    .story-content .highlight { color: #0B2545; font-weight: 600; }
+
+    .earnings-section { padding: 80px 0; background: #fff url('../images/water-bg-1.png') center/cover no-repeat; }
+    .earnings-section h2 { text-align: center; font-size: 2.25rem; font-weight: 800; color: #0f172a; margin-bottom: 12px; }
+    .earnings-section .subtitle { text-align: center; color: #64748b; font-size: 1.05rem; margin-bottom: 48px; }
+
+    .earnings-track { margin-bottom: 48px; max-width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 48px; }
+    .earnings-track h3 {
+      font-size: 1.35rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 10px; justify-content: center;
+    }
+    .earnings-track .track-badge {
+      display: inline-block; padding: 4px 14px; border-radius: 20px; font-size: 0.75rem;
+      font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .badge-resi { background: #dbeafe; color: #1d4ed8; }
+    .badge-comm { background: #d1fae5; color: #065f46; }
+    .earnings-track .track-desc { color: #64748b; font-size: 0.95rem; margin-bottom: 20px; text-align: center; }
+
+    .earnings-table { width: 100%; border-collapse: collapse; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .earnings-table thead th {
+      background: #0B2545; color: #fff; padding: 16px 24px; font-weight: 600; font-size: 0.9rem;
+      text-align: left;
+    }
+    .earnings-table tbody td { padding: 16px 24px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; color: #334155; }
+    .earnings-table tbody tr:last-child td { border-bottom: none; }
+    .earnings-table tbody tr:hover { background: #f8fafc; }
+    .earnings-table .money { font-weight: 700; color: #0B2545; }
+    .earnings-table .money-green { font-weight: 700; color: #059669; }
+
+    .comm-table thead th { background: #059669; }
+
+    .combined-section { padding: 80px 0; background: #0B2545; color: #fff; }
+    .combined-section h2 { text-align: center; font-size: 2.25rem; font-weight: 800; margin-bottom: 12px; }
+    .combined-section .subtitle { text-align: center; color: #94a3b8; font-size: 1.05rem; margin-bottom: 48px; }
+    .combined-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 700px; margin: 0 auto; }
+    .combined-card {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 32px; text-align: center;
+    }
+    .combined-card .number { font-size: 2.5rem; font-weight: 800; color: #00C8E8; }
+    .combined-card .label { font-size: 0.9rem; color: #94a3b8; margin-top: 6px; font-weight: 500; }
+    .combined-card .detail { font-size: 0.8rem; color: #64748b; margin-top: 8px; }
+
+    .override-section { padding: 80px 0; background: #fff url('../images/water-bg-1.png') center/cover no-repeat; }
+    .override-content { max-width: 800px; margin: 0 auto; }
+    .override-content h2 { font-size: 2.25rem; font-weight: 800; color: #0f172a; margin-bottom: 24px; text-align: center; }
+    .override-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 32px; }
+    .override-card {
+      background: #f8fafc; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;
+    }
+    .override-card h4 { font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .override-card .pct { font-size: 2rem; font-weight: 800; color: #0B2545; margin-bottom: 4px; }
+    .override-card p { color: #64748b; font-size: 0.9rem; }
+
+    .apply-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0B2545 0%, #00C8E8 100%);
+      color: #fff;
+      text-align: center;
+    }
+    .apply-section h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+    .apply-section p { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto 32px; }
+    .apply-section .btn-white {
+      display: inline-block; background: #fff; color: #0B2545; padding: 16px 48px;
+      border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .apply-section .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+    .checklist { list-style: none; padding: 0; margin: 32px 0; }
+    .checklist li {
+      padding: 12px 0; border-bottom: 1px solid #e2e8f0; color: #334155; font-size: 1rem;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .checklist li::before { content: "✓"; color: #059669; font-weight: 800; font-size: 1.2rem; }
+
+    @media (max-width: 768px) {
+      .join-hero h1 { font-size: 2.25rem; }
+      .join-hero p { font-size: 1rem; }
+      .earnings-table { font-size: 0.85rem; }
+      .earnings-table thead th, .earnings-table tbody td { padding: 12px 14px; }
+      .combined-card .number { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body class="page-join">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo-header.png" alt="PureFlow"></a>
+      <nav class="nav-links">
+        <a href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html" class="active">Join Us</a>
+      </nav>
+      <a href="tel:+18015550199" class="header-phone">801-555-0199</a>
+      <a href="contact.html" class="btn btn-cta">Free Water Test</a>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-drawer">
+    <a href="index.html">Home</a>
+    <a href="residential.html">Residential</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html">Join Us</a>
+    <a href="tel:+18015550199" class="drawer-phone">801-555-0199</a>
+    <a href="contact.html" class="btn btn-cta drawer-cta">Free Water Test</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="join-hero">
+      <div class="container">
+        <h1>Build Something That Pays You Every Month</h1>
+        <p>PureFlow reps earn recurring commissions on every system they place. Residential. Commercial. The income stacks and it never stops.</p>
+      </div>
+    </section>
+
+    <!-- WHY JOIN -->
+    <section class="why-join">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Reps Choose <span class="brand-text">Pure<span>Flow</span></span></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="icon">💰</div>
+            <h3>Recurring Income</h3>
+            <p>Every system you place pays you monthly. Not once. Not for a quarter. Every single month the customer has the system. That's income that compounds.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">🏠</div>
+            <h3>Two Revenue Streams</h3>
+            <p>Sell residential systems to homeowners. Place commercial coolers in offices. Every business owner you close on commercial is a residential lead for their home too.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">📈</div>
+            <h3>Build a Team, Earn Overrides</h3>
+            <p>Recruit other reps and earn trailing overrides on everything they close. Two levels deep. Your team's success becomes your income.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">🛠️</div>
+            <h3>We Handle Everything Else</h3>
+            <p>Installation, maintenance, filter replacements, customer service. You sell. We do the rest. No inventory, no warehouse, no truck.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">🗺️</div>
+            <h3>Protected Territories</h3>
+            <p>Utah's Wasatch Front is wide open. 2.5 million people, 800,000 households. Hard water everywhere. The demand writes itself.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">🎯</div>
+            <h3>Sell What People Need</h3>
+            <p>Utah has some of the hardest water in the country. 89 contaminants detected. Arsenic at 135x health guidelines. You're not pushing a product. You're solving a real problem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE STORY -->
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <h2>The Opportunity Nobody's Talking About</h2>
+          <p>Here's something most people don't realize about Utah tap water. It passes federal standards. That sounds reassuring until you learn those standards <span class="highlight">haven't been updated in almost 20 years</span>. The EWG found 89 contaminants in Utah water systems. Arsenic at 135 times above health guidelines. Bromochloroacetic acid at 168 times.</p>
+          <p>That's 3.5 million people drinking water that technically "passes" but doesn't come close to what independent health organizations consider safe.</p>
+          <p>Now here's where it gets interesting for you. Every one of those households is a potential customer. And every business with a water cooler that still uses bottles or a basic filter is leaving money on the table — yours.</p>
+          <p>PureFlow reps don't cold call. They show up with a <span class="highlight">free TDS water test</span>, let people see the number on the meter, and ask one question: "Would you like to fix that?" The product sells itself. The water test closes the deal.</p>
+          <p>And unlike most sales gigs where you get paid once and move on, PureFlow pays you <span class="highlight">every month</span> for as long as that customer has the system. Place 100 residential accounts? That's $1,500 a month hitting your bank whether you work or not. Stack commercial accounts on top of that and the math gets real interesting, real fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESIDENTIAL EARNINGS -->
+    <section class="earnings-section">
+      <div class="container">
+        <h2>What You Can Earn</h2>
+        <p class="subtitle">Two tracks. Both pay recurring. Stack them together and watch the numbers climb.</p>
+
+        <div class="earnings-track">
+          <h3>
+            <span class="track-badge badge-resi">Residential</span>
+            Under-Counter RO Systems — Homeowners
+          </h3>
+          <p class="track-desc">Door-to-door or referral-based. Free water test opens the door. Average contract: $1,800 over 3 years. You earn 15% of every monthly payment, ongoing.</p>
+
+          <table class="earnings-table">
+            <thead>
+              <tr>
+                <th>Accounts Placed</th>
+                <th>Avg. Monthly Residual</th>
+                <th>Annual Earnings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>25 accounts</td><td class="money">$375/mo</td><td class="money">$4,500/yr</td></tr>
+              <tr><td>50 accounts</td><td class="money">$750/mo</td><td class="money">$9,000/yr</td></tr>
+              <tr><td>100 accounts</td><td class="money">$1,500/mo</td><td class="money">$18,000/yr</td></tr>
+              <tr><td>200 accounts</td><td class="money">$3,000/mo</td><td class="money">$36,000/yr</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="earnings-track">
+          <h3>
+            <span class="track-badge badge-comm">Commercial</span>
+            Purlogix Cooler Systems — Businesses
+          </h3>
+          <p class="track-desc">Offices, gyms, restaurants, medical clinics. One conversation with the office manager. Average deal: $149/mo system. You earn 15% of contract value upfront + residual on renewals.</p>
+
+          <table class="earnings-table comm-table">
+            <thead>
+              <tr>
+                <th>Accounts Placed</th>
+                <th>Upfront Commission</th>
+                <th>Monthly Residual</th>
+                <th>Annual Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>10 accounts</td><td class="money-green">$7,990</td><td class="money-green">$224/mo</td><td class="money-green">$10,678/yr</td></tr>
+              <tr><td>25 accounts</td><td class="money-green">$19,975</td><td class="money-green">$560/mo</td><td class="money-green">$26,695/yr</td></tr>
+              <tr><td>50 accounts</td><td class="money-green">$39,950</td><td class="money-green">$1,119/mo</td><td class="money-green">$53,378/yr</td></tr>
+            </tbody>
+          </table>
+          <p style="color: #64748b; font-size: 0.8rem; margin-top: 12px;"><em>Commercial figures based on average WL900 placement at $149/mo on 5-year terms. Actual earnings vary by system and term length.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMBINED POTENTIAL -->
+    <section class="combined-section">
+      <div class="container">
+        <h2>Stack Both Tracks Together</h2>
+        <p class="subtitle">Most reps run residential and commercial side by side. Here's what that looks like after 12 months of consistent work.</p>
+        <div class="combined-grid">
+          <div class="combined-card">
+            <div class="number">$4,500</div>
+            <div class="label">Monthly Residual</div>
+            <div class="detail">100 resi + 25 commercial accounts</div>
+          </div>
+          <div class="combined-card">
+            <div class="number">$54,000</div>
+            <div class="label">Annual Recurring</div>
+            <div class="detail">Before upfront commissions</div>
+          </div>
+          <div class="combined-card">
+            <div class="number">$19,975</div>
+            <div class="label">Upfront Commissions</div>
+            <div class="detail">25 commercial placements</div>
+          </div>
+          <div class="combined-card">
+            <div class="number">$73,975</div>
+            <div class="label">Year 1 Total Earnings</div>
+            <div class="detail">Residual + upfront combined</div>
+          </div>
+        </div>
+        <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin-top: 32px;"><em>Projections based on consistent placement. Individual results vary. These are not guarantees of income.</em></p>
+      </div>
+    </section>
+
+    <!-- TEAM OVERRIDES -->
+    <section class="override-section">
+      <div class="container">
+        <div class="override-content">
+          <h2>Recruit Reps. Earn on Their Sales.</h2>
+          <p style="text-align: center; color: #64748b; margin-bottom: 32px;">Build a team and earn trailing overrides on everything they close. Two levels deep. Their wins become your income.</p>
+          <div class="override-grid">
+            <div class="override-card">
+              <div class="pct">5%</div>
+              <h4>Level 1 Override</h4>
+              <p>Earn 5% of every contract value from reps you personally recruit. They close a $1,800 residential deal, you earn $90. They close a $8,940 commercial deal, you earn $447. Every time.</p>
+            </div>
+            <div class="override-card">
+              <div class="pct">2%</div>
+              <h4>Level 2 Override</h4>
+              <p>Your recruits recruit their own reps. You earn 2% on that second level too. The deeper your team grows, the more your override income compounds.</p>
+            </div>
+          </div>
+          <p style="text-align: center; color: #64748b; font-size: 0.85rem; margin-top: 24px;">This is not MLM. It's a standard sales organization with recruitment incentives. Two levels. That's it. Total comp cost stays under 27%.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT TAKES -->
+    <section style="padding: 80px 0; background: #f8f8f8;">
+      <div class="container">
+        <div style="max-width: 700px; margin: 0 auto;">
+          <h2 style="font-size: 2.25rem; font-weight: 800; text-align: center; color: #0f172a; margin-bottom: 32px;">What It Takes</h2>
+          <ul class="checklist">
+            <li>Self-starter mentality — nobody's going to knock the doors for you</li>
+            <li>Reliable transportation and a phone</li>
+            <li>Willingness to learn the product (we train you)</li>
+            <li>Live in or near Utah's Wasatch Front</li>
+            <li>No experience required — just work ethic</li>
+            <li>Background check required</li>
+          </ul>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #0f172a; margin-top: 40px; margin-bottom: 16px; text-align: center;">What You Get From Us</h3>
+          <ul class="checklist">
+            <li>Full product training — residential and commercial</li>
+            <li>TDS water testing kit provided</li>
+            <li>Sales materials, one-pagers, and door cards</li>
+            <li>Installation and service handled by PureFlow</li>
+            <li>CRM and lead tracking tools</li>
+            <li>Protected territory assignment</li>
+            <li>Weekly team meetings and ongoing coaching</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY CTA -->
+    <section class="apply-section">
+      <div class="container">
+        <h2>Ready to Start Earning?</h2>
+        <p>Fill out the form below and we'll set up a quick call to walk you through the opportunity, answer your questions, and get you started.</p>
+        <a href="contact.html" class="btn-white">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo-footer.png" alt="PureFlow"></a>
+        <p>Utah's trusted water filtration experts. Systems you own, not rent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="join.html">Join Our Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="salt-lake-city.html">Salt Lake City</a>
+        <a href="provo.html">Provo</a>
+        <a href="ogden.html">Ogden</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+18015550199">801-555-0199</a>
+        <a href="mailto:support@pureflowut.com">support@pureflowut.com</a>
+        <p>Serving Utah's Wasatch Front<br>Draper to Ogden</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PureFlow. All rights reserved.</p>
+    </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

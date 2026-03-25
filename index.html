@@ -251,30 +251,30 @@
     <section class="water-check" style="background: linear-gradient(135deg, #0B2545 0%, #003087 100%); color: #fff; padding: 80px 0;">
       <div class="container fade-in">
         <div class="section-header" style="margin-bottom: 3rem;">
-          <h2 style="color: #fff; font-size: 2.5rem;">Your Tap Water Isn't as Clean as You Think</h2>
-          <p style="color: #94a3b8; font-size: 1.15rem; max-width: 700px; margin: 0 auto;">Utah's water has been tested. The results are alarming.</p>
+          <h2 class="section-title-lg" style="color: #fff;">Your Tap Water Isn't as Clean as You Think</h2>
+          <p class="section-subtitle-muted" style="max-width: 700px; margin: 0 auto;">Utah's water has been tested. The results are alarming.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-bottom: 3rem;">
-          <div style="background: rgba(230,81,0,0.1); border: 1px solid rgba(230,81,0,0.3); border-radius: 16px; padding: 28px; text-align: center;">
-            <div style="font-size: 3rem; font-weight: 800; color: #e65100;">89</div>
-            <div style="font-size: 0.95rem; color: #e65100; font-weight: 600; margin-top: 4px;">Contaminants Found</div>
-            <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 8px;">in Utah tap water across 506 utilities</div>
+        <div class="wq-stat-grid">
+          <div class="wq-stat-card">
+            <div class="wq-stat-number">89</div>
+            <div class="wq-stat-label">Contaminants Found</div>
+            <div class="wq-stat-sublabel">in Utah tap water across 506 utilities</div>
           </div>
-          <div style="background: rgba(230,81,0,0.1); border: 1px solid rgba(230,81,0,0.3); border-radius: 16px; padding: 28px; text-align: center;">
-            <div style="font-size: 3rem; font-weight: 800; color: #e65100;">135x</div>
-            <div style="font-size: 0.95rem; color: #e65100; font-weight: 600; margin-top: 4px;">Above Health Guidelines</div>
-            <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 8px;">Arsenic levels in Salt Lake City water</div>
+          <div class="wq-stat-card">
+            <div class="wq-stat-number">135x</div>
+            <div class="wq-stat-label">Above Health Guidelines</div>
+            <div class="wq-stat-sublabel">Arsenic levels in Salt Lake City water</div>
           </div>
-          <div style="background: rgba(230,81,0,0.1); border: 1px solid rgba(230,81,0,0.3); border-radius: 16px; padding: 28px; text-align: center;">
-            <div style="font-size: 3rem; font-weight: 800; color: #e65100;">168x</div>
-            <div style="font-size: 0.95rem; color: #e65100; font-weight: 600; margin-top: 4px;">Above Health Guidelines</div>
-            <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 8px;">Bromochloroacetic acid in SLC water</div>
+          <div class="wq-stat-card">
+            <div class="wq-stat-number">168x</div>
+            <div class="wq-stat-label">Above Health Guidelines</div>
+            <div class="wq-stat-sublabel">Bromochloroacetic acid in SLC water</div>
           </div>
-          <div style="background: rgba(230,81,0,0.1); border: 1px solid rgba(230,81,0,0.3); border-radius: 16px; padding: 28px; text-align: center;">
-            <div style="font-size: 3rem; font-weight: 800; color: #e65100;">3.5M</div>
-            <div style="font-size: 0.95rem; color: #e65100; font-weight: 600; margin-top: 4px;">Utahns Affected</div>
-            <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 8px;">served by systems with detected contaminants</div>
+          <div class="wq-stat-card">
+            <div class="wq-stat-number">3.5M</div>
+            <div class="wq-stat-label">Utahns Affected</div>
+            <div class="wq-stat-sublabel">served by systems with detected contaminants</div>
           </div>
         </div>
 
@@ -282,7 +282,7 @@
         <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 2rem; text-align: center;">Source: Environmental Working Group, data 2013-2024</p>
 
         <div style="text-align: center;">
-          <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg" style="font-size: 1.1rem; padding: 16px 40px;">Look Up Your Zip Code &mdash; See What's In Your Water</a>
+          <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg">Look Up Your Zip Code &mdash; See What's In Your Water</a>
         </div>
       </div>
     </section>
@@ -294,27 +294,27 @@
           <h2>See the Difference</h2>
           <p>Total Dissolved Solids (TDS) measure the purity of your water. Lower is better.</p>
         </div>
-        <div class="fade-in" style="max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; padding: 40px;">
+        <div class="tds-visual-card fade-in">
           <div style="text-align: center; margin-bottom: 32px;">
             <img src="images/tds-comparison.png" alt="Tap Water 350+ ppm vs PureFlow Filtered under 20 ppm" style="max-width: 100%; border-radius: 12px; display: block; margin: 0 auto;">
           </div>
-          <div style="display: flex; justify-content: center; gap: 60px; align-items: flex-end; padding: 0 20px;">
-            <div style="text-align: center; flex: 1; max-width: 280px;">
-              <div style="background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%); border-radius: 12px; height: 180px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 20px; margin-bottom: 12px;">
-                <span style="font-size: 2.5rem; font-weight: 800; color: #fff;">350+</span>
+          <div class="tds-bar-container">
+            <div class="tds-bar-item">
+              <div class="tds-bar-red">
+                <span class="tds-bar-number lg">350+</span>
               </div>
-              <p style="font-weight: 700; font-size: 1.1rem; color: #1e293b;">Tap Water</p>
-              <p style="color: #64748b; font-size: 0.85rem;">Utah average TDS (ppm)</p>
+              <p class="tds-bar-label">Tap Water</p>
+              <p class="tds-bar-sublabel">Utah average TDS (ppm)</p>
             </div>
-            <div style="text-align: center; flex: 1; max-width: 280px;">
-              <div style="background: linear-gradient(180deg, #0B2545 0%, #00C8E8 100%); border-radius: 12px; height: 50px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px; margin-bottom: 12px;">
-                <span style="font-size: 1.5rem; font-weight: 800; color: #fff;">&lt;20</span>
+            <div class="tds-bar-item">
+              <div class="tds-bar-blue">
+                <span class="tds-bar-number sm">&lt;20</span>
               </div>
-              <p style="font-weight: 700; font-size: 1.1rem; color: #1e293b;">PureFlow Filtered</p>
-              <p style="color: #64748b; font-size: 0.85rem;">After RO filtration (ppm)</p>
+              <p class="tds-bar-label">PureFlow Filtered</p>
+              <p class="tds-bar-sublabel">After RO filtration (ppm)</p>
             </div>
           </div>
-          <p style="text-align: center; color: #94a3b8; font-size: 0.8rem; margin-top: 24px;">Total Dissolved Solids (TDS) Comparison — lower is cleaner</p>
+          <p class="tds-footnote">Total Dissolved Solids (TDS) Comparison — lower is cleaner</p>
         </div>
       </div>
     </section>
@@ -333,28 +333,28 @@
     </section>
 
     <!-- JOIN OUR TEAM TEASER -->
-    <section style="padding: 80px 0; background: linear-gradient(135deg, #0B2545 0%, #00C8E8 100%); color: #fff;">
+    <section class="join-teaser-section">
       <div class="container" style="text-align: center;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 12px;">Join Our Team</h2>
-        <p style="color: #94a3b8; font-size: 1.1rem; max-width: 600px; margin: 0 auto 48px;">PureFlow reps earn on every system they place. Residential. Commercial. The income stacks.</p>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto 48px;">
-          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 20px;">
-            <div style="font-size: 2rem; margin-bottom: 12px;">💰</div>
-            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Recurring Income</h3>
-            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">Every system you place pays you monthly. Not once. Every single month. That's income that compounds.</p>
+        <h2 class="section-title-lg">Join Our Team</h2>
+        <p class="section-subtitle-muted" style="max-width: 600px; margin: 0 auto 48px;">PureFlow reps earn on every system they place. Residential. Commercial. The income stacks.</p>
+        <div class="grid-3" style="max-width: 900px; margin: 0 auto 48px;">
+          <div class="join-teaser-card">
+            <div class="teaser-emoji">💰</div>
+            <h3>Recurring Income</h3>
+            <p>Every system you place pays you monthly. Not once. Every single month. That's income that compounds.</p>
           </div>
-          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 20px;">
-            <div style="font-size: 2rem; margin-bottom: 12px;">🏠</div>
-            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Two Revenue Streams</h3>
-            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">Residential RO systems for homeowners. Commercial coolers for businesses. Every business owner is a residential lead too.</p>
+          <div class="join-teaser-card">
+            <div class="teaser-emoji">🏠</div>
+            <h3>Two Revenue Streams</h3>
+            <p>Residential RO systems for homeowners. Commercial coolers for businesses. Every business owner is a residential lead too.</p>
           </div>
-          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 20px;">
-            <div style="font-size: 2rem; margin-bottom: 12px;">📈</div>
-            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Build a Team</h3>
-            <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5;">Recruit reps and earn trailing overrides on everything they close. Your team's success becomes your income.</p>
+          <div class="join-teaser-card">
+            <div class="teaser-emoji">📈</div>
+            <h3>Build a Team</h3>
+            <p>Recruit reps and earn trailing overrides on everything they close. Your team's success becomes your income.</p>
           </div>
         </div>
-        <a href="join.html" style="display: inline-block; background: #fff; color: #0B2545; padding: 16px 48px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;">Learn About Rep Opportunities</a>
+        <a href="join.html" class="btn-white">Learn About Rep Opportunities</a>
       </div>
     </section>
 

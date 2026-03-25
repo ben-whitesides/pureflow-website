@@ -119,9 +119,16 @@
     @media (max-width: 768px) {
       .join-hero h1 { font-size: 2.25rem; }
       .join-hero p { font-size: 1rem; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
       .earnings-table { font-size: 0.85rem; }
       .earnings-table thead th, .earnings-table tbody td { padding: 12px 14px; }
       .combined-card .number { font-size: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .combined-grid { grid-template-columns: 1fr; }
+      .why-card { padding: 28px 20px; }
+      .override-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -339,7 +346,7 @@
     <section style="padding: 80px 0; background: #f8f8f8;">
       <div class="container">
         <div style="max-width: 700px; margin: 0 auto;">
-          <h2 style="font-size: 2.25rem; font-weight: 800; text-align: center; color: #0f172a; margin-bottom: 32px;">What It Takes</h2>
+          <h2 class="section-title-lg" style="text-align: center; color: #0f172a; margin-bottom: 32px;">What It Takes</h2>
           <ul class="checklist">
             <li>Self-starter mentality — nobody's going to knock the doors for you</li>
             <li>Reliable transportation and a phone</li>
@@ -348,7 +355,7 @@
             <li>No experience required — just work ethic</li>
             <li>Background check required</li>
           </ul>
-          <h3 style="font-size: 1.35rem; font-weight: 700; color: #0f172a; margin-top: 40px; margin-bottom: 16px; text-align: center;">What You Get From Us</h3>
+          <h3 style="text-align: center; color: #0f172a; margin-top: 40px; margin-bottom: 16px;">What You Get From Us</h3>
           <ul class="checklist">
             <li>Full product training — residential and commercial</li>
             <li>TDS water testing kit provided</li>

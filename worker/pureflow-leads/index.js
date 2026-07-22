@@ -74,7 +74,8 @@ async function emailNotification(env, submission) {
     method: 'POST',
     headers: {
       Authorization: 'Bearer ' + env.RESEND_API_KEY,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'User-Agent': 'PureFlow-Lead-Worker/1.0'
     },
     body: JSON.stringify({
       from: env.LEAD_FROM_EMAIL,

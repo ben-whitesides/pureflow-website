@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact PureFlow | Free Water Test &amp; Consultation</title>
-  <meta name="description" content="Schedule a free water test or request a quote from PureFlow. Serving the Wasatch Front — Salt Lake, Utah, Davis, and Weber counties. Call 801-555-0199.">
-  <meta property="og:title" content="Contact PureFlow | Free Water Test &amp; Consultation">
-  <meta property="og:description" content="Schedule your free water test or get a quote. Call 801-555-0199 or fill out our form. Mon-Sat 8am-6pm.">
+  <title>Contact PureFlow | Request a Free Cooler Trial</title>
+  <meta name="description" content="Request a free bottleless cooler trial or get a quote from PureFlow. Serving businesses across the Wasatch Front — Salt Lake, Utah, Davis, and Weber counties. Call 801-555-0199.">
+  <meta property="og:title" content="Contact PureFlow | Request a Free Cooler Trial">
+  <meta property="og:description" content="Request your free cooler trial or get a quote. Call 801-555-0199 or fill out our form. Mon-Sat 8am-6pm.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pureflowut.com/contact.html">
   <link rel="canonical" href="https://pureflowut.com/contact.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/analytics.js"></script>
 </head>
 <body class="page-contact">
 
@@ -22,13 +23,14 @@
     <div class="header-inner">
       <a href="index.html" class="logo"><img src="images/logo-header.png" alt="PureFlow"></a>
       <nav class="nav-links">
-        <a href="residential.html">Residential</a>
-        <a href="commercial.html">Commercial</a>
+        <a href="commercial.html">Coolers &amp; Ice</a>
+        <a href="commercial.html#who-we-serve">Who We Serve</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
+        <a href="join.html">Join Us</a>
       </nav>
       <a href="tel:+18015550199" class="header-phone">801-555-0199</a>
-      <a href="contact.html" class="btn btn-cta">Free Water Test</a>
+      <a href="contact.html" class="btn btn-cta">Contact Us</a>
       <button class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
@@ -40,13 +42,13 @@
   <div class="mobile-overlay"></div>
   <nav class="mobile-drawer">
     <a href="index.html">Home</a>
-    <a href="residential.html">Residential</a>
-    <a href="commercial.html">Commercial</a>
+    <a href="commercial.html">Coolers &amp; Ice</a>
+    <a href="commercial.html#who-we-serve">Who We Serve</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-        <a href="join.html">Join Us</a>
+    <a href="join.html">Join Us</a>
     <a href="tel:+18015550199" class="drawer-phone">801-555-0199</a>
-    <a href="contact.html" class="btn btn-cta drawer-cta">Free Water Test</a>
+    <a href="contact.html" class="btn btn-cta drawer-cta">Contact Us</a>
   </nav>
 
   <main>
@@ -54,8 +56,8 @@
     <!-- HERO -->
     <section class="hero hero-sm">
       <div class="container">
-        <h1>Get Started Today</h1>
-        <p class="subtitle">Schedule a free water test, request a quote, or just ask a question. We respond within one business day.</p>
+        <h1>Request a Free Trial</h1>
+        <p class="subtitle">Try a PureFlow cooler in your space with no obligation, request a quote, or just ask a question. We respond within one business day.</p>
       </div>
     </section>
 
@@ -84,12 +86,12 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="contact-email">Email Address <span class="required">*</span></label>
-                  <input type="email" id="contact-email" name="email" required placeholder="you@email.com">
+                  <input type="email" id="contact-email" name="email" required placeholder="you@company.com">
                   <p class="error-msg">Please enter a valid email address.</p>
                 </div>
                 <div class="form-group">
-                  <label for="contact-address">Address</label>
-                  <input type="text" id="contact-address" name="address" placeholder="Street address, city, zip">
+                  <label for="contact-company">Business Name</label>
+                  <input type="text" id="contact-company" name="company" placeholder="Your company">
                 </div>
               </div>
 
@@ -97,25 +99,27 @@
                 <div class="form-group">
                   <label for="contact-service">What Are You Interested In? <span class="required">*</span></label>
                   <select id="contact-service" name="service" required>
-                    <option value="">Select a service...</option>
-                    <option value="residential-ro">Residential RO System</option>
-                    <option value="commercial-cooler">Commercial Cooler</option>
-                    <option value="whole-house">Whole House Filtration</option>
-                    <option value="water-softener">Water Softener</option>
-                    <option value="water-test">Free Water Test</option>
+                    <option value="">Select an option...</option>
+                    <option value="free-trial">Free Cooler Trial</option>
+                    <option value="office-cooler">Office Water Cooler</option>
+                    <option value="ice-machine">Ice Machine / Ice + Water</option>
+                    <option value="gym-fitness">Gym / Fitness Hydration</option>
+                    <option value="restaurant">Restaurant / Bar</option>
+                    <option value="healthcare">Healthcare / Dental</option>
+                    <option value="quote">Request a Quote</option>
                     <option value="other">Other</option>
                   </select>
-                  <p class="error-msg">Please select a service.</p>
+                  <p class="error-msg">Please select an option.</p>
                 </div>
                 <div class="form-group">
-                  <label for="contact-date">Preferred Date</label>
-                  <input type="date" id="contact-date" name="date">
+                  <label for="contact-product">Cooler / Model (optional)</label>
+                  <input type="text" id="contact-product" name="product" placeholder="e.g. PW90, XL1, i30">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="message" placeholder="Tell us about your water situation, any questions, or the best time to reach you."></textarea>
+                <textarea id="contact-message" name="message" placeholder="Tell us about your space — how many people, what you use now, and the best time to reach you."></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
@@ -149,7 +153,7 @@
 
             <div class="contact-info-item">
               <h4>What to Expect</h4>
-              <p>After you submit this form, a PureFlow team member will contact you within one business day to schedule your free water test or answer your questions. No pressure, no obligation.</p>
+              <p>After you submit this form, a PureFlow team member will contact you within one business day to set up your free trial or answer your questions. No pressure, no obligation.</p>
             </div>
 
           </div>
@@ -168,12 +172,24 @@
 
           <div class="faq-item">
             <button class="faq-question">
-              What does reverse osmosis actually remove?
+              How does the free trial work?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Reverse osmosis pushes water through a semi-permeable membrane that filters out up to 99% of dissolved solids, including chlorine, fluoride, lead, arsenic, nitrates, and microplastics. Our systems reduce TDS from 350+ ppm (typical Utah tap water) to under 20 ppm.
+                We install a PureFlow cooler in your space at no cost so your team can try it for themselves. If you love it, you keep it on a simple monthly plan. If it's not the right fit, we remove it &mdash; no charge, no hassle.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What does the monthly price include?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                One flat monthly rate covers the equipment, professional installation, all filter changes, routine sanitization, and any repairs. There are no per-bottle costs and no surprise service fees &mdash; everything is included.
               </div>
             </div>
           </div>
@@ -185,43 +201,31 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Most under-sink RO installations take 60 to 90 minutes. Whole house systems and water softeners typically take 2 to 3 hours. Our technicians handle everything &mdash; you don't need to prep anything beyond clearing space under the sink or near your main water line.
+                Most cooler installations take 30 to 60 minutes. We connect the unit to your existing water line, sanitize it, and make sure it's dispensing perfectly before we leave. Your team can use it the same day.
               </div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              How often do filters need to be replaced?
+              How often do filters get changed?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Pre-filters (sediment and carbon) are replaced every 6 to 12 months. The RO membrane itself lasts 2 to 3 years depending on usage and water quality. All filter changes are included in your monthly plan &mdash; we schedule them for you and handle the swap.
+                We proactively schedule filter changes and sanitization &mdash; typically every 6 to 12 months depending on the model and your usage. It's all included in your monthly plan, and we handle the scheduling so you never have to think about it.
               </div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              What warranty comes with the system?
+              Do the coolers make ice too?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                All PureFlow systems include a manufacturer warranty covering defects in materials and workmanship. RO systems come with a 5-year warranty on the membrane and a 1-year warranty on other components. Whole house and softener systems have comparable coverage. We also stand behind our installation work.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              Can I buy the system outright instead of monthly?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                Yes. While most customers prefer the monthly plan because it includes maintenance, you can purchase any system outright. Contact us for one-time purchase pricing. Maintenance plans are available separately for purchased systems.
+                Several do. The Wellsys i15 and i30 dispense both purified water and fresh ice, and the i30 is built for high-volume environments like restaurants and bars. Tell us what you need and we'll match you to the right unit.
               </div>
             </div>
           </div>
@@ -235,7 +239,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Our Service Area</h2>
-          <p>Serving the entire Wasatch Front from Ogden to Provo.</p>
+          <p>Serving businesses across the entire Wasatch Front from Ogden to Provo.</p>
         </div>
         <div class="fade-in" style="border-radius:16px; overflow:hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d387330.7599964631!2d-111.89105!3d40.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1711317600000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -251,7 +255,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo"><img src="images/logo-footer.png" alt="PureFlow"></a>
-          <p>Utah's trusted water filtration provider. Residential and commercial systems you own, installed and serviced by local technicians along the Wasatch Front.</p>
+          <p>Utah's bottleless water &amp; ice partner for offices, gyms, clinics, restaurants, and facilities &mdash; installed and serviced by a local team along the Wasatch Front.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">FB</a>
             <a href="#" aria-label="Instagram">IG</a>
@@ -260,16 +264,15 @@
         </div>
         <div class="footer-col">
           <h4>Solutions</h4>
-          <a href="residential.html">Residential</a>
-          <a href="commercial.html">Commercial</a>
-          <a href="residential.html#whole-house">Whole House</a>
-          <a href="residential.html#softener">Water Softeners</a>
+          <a href="commercial.html">Coolers &amp; Ice</a>
+          <a href="commercial.html#who-we-serve">Who We Serve</a>
+          <a href="contact.html?product=free-trial">Request Free Trial</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <a href="about.html">About Us</a>
           <a href="contact.html">Contact</a>
-        <a href="join.html">Join Us</a>
+          <a href="join.html">Join Us</a>
           <a href="salt-lake-city.html">Salt Lake City</a>
           <a href="provo.html">Provo</a>
           <a href="ogden.html">Ogden</a>
@@ -282,7 +285,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 PureFlow Water Filtration. All rights reserved.</p>
+        <p>&copy; 2026 PureFlow Water. All rights reserved.</p>
       </div>
     </div>
   </footer>

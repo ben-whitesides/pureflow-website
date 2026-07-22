@@ -203,4 +203,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  /* ----------------------------------------
+     CONTACT FORM PREFILL FROM ?product=
+     Lets "Request Free Trial" buttons carry the
+     chosen cooler into the contact form.
+     ---------------------------------------- */
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var product = params.get('product');
+    if (!product) return;
+
+    var serviceField = document.getElementById('contact-service');
+    var productField = document.getElementById('contact-product');
+    var messageField = document.getElementById('contact-message');
+
+    if (product === 'free-trial') {
+      if (serviceField) serviceField.value = 'free-trial';
+      if (messageField && !messageField.value) {
+        messageField.value = "I'd like to set up a free trial for my business.";
+      }
+    } else {
+      // A specific model was requested.
+      if (productField) productField.value = product.replace(/-/g, ' ');
+      if (serviceField) serviceField.value = 'free-trial';
+      if (messageField && !messageField.value) {
+        messageField.value = "I'm interested in a free trial of the " + product.replace(/-/g, ' ') + ".";
+      }
+    }
+  })();
+
 });

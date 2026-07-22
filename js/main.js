@@ -4,6 +4,41 @@
    form validation, scroll animations
    ============================================ */
 
+const LEAD_ENDPOINT = 'https://pureflow-leads.ben-8b5.workers.dev/submit';
+
+function showLeadStatus(element, success, message) {
+  if (!element) return;
+
+  element.replaceChildren(document.createTextNode(message));
+  element.style.color = success ? '#059669' : '#B42318';
+
+  if (!success) {
+    element.appendChild(document.createTextNode(' You can also '));
+    var emailLink = document.createElement('a');
+    emailLink.href = 'mailto:nick@pureflowut.com';
+    emailLink.textContent = 'email nick@pureflowut.com';
+    element.appendChild(emailLink);
+    element.appendChild(document.createTextNode('.'));
+  }
+
+  element.style.display = 'block';
+}
+
+async function submitLead(payload) {
+  var response = await fetch(LEAD_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+  var result = await response.json().catch(function () { return null; });
+
+  if (!response.ok || !result || result.ok !== true) {
+    throw new Error('Lead submission was not confirmed.');
+  }
+
+  return result;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ----------------------------------------
@@ -95,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
      ---------------------------------------- */
   var contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       var valid = true;
 
@@ -134,15 +169,44 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
 
-      if (valid) {
-        // In production, submit to a backend endpoint
-        var successMsg = document.getElementById('form-success');
-        if (successMsg) {
-          successMsg.style.display = 'block';
-          contactForm.reset();
-          setTimeout(function () {
-            successMsg.style.display = 'none';
-          }, 5000);
+      if (!valid) return;
+
+      var successMsg = document.getElementById('form-success');
+      var submitButton = contactForm.querySelector('button[type="submit"]');
+      var originalButtonText = submitButton ? submitButton.textContent : '';
+      var serviceField = contactForm.querySelector('[name="service"]');
+      var productField = contactForm.querySelector('[name="product"]');
+      var messageField = contactForm.querySelector('[name="message"]');
+      var messageParts = [];
+
+      if (serviceField && serviceField.value) messageParts.push('Interest: ' + serviceField.value);
+      if (productField && productField.value.trim()) messageParts.push('Model: ' + productField.value.trim());
+      if (messageField && messageField.value.trim()) messageParts.push(messageField.value.trim());
+
+      if (successMsg) successMsg.style.display = 'none';
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
+
+      try {
+        await submitLead({
+          form: 'contact',
+          name: contactForm.querySelector('[name="name"]').value.trim(),
+          email: emailField.value.trim(),
+          phone: phoneField.value.trim(),
+          company: contactForm.querySelector('[name="company"]').value.trim(),
+          message: messageParts.join('\n'),
+          page: window.location.href
+        });
+        showLeadStatus(successMsg, true, "Thank you! We'll be in touch within one business day.");
+        contactForm.reset();
+      } catch (error) {
+        showLeadStatus(successMsg, false, 'We could not send your request. Please try again.');
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
         }
       }
     });
@@ -151,20 +215,37 @@ document.addEventListener('DOMContentLoaded', function () {
   // Email capture form
   var emailCaptureForm = document.getElementById('email-capture-form');
   if (emailCaptureForm) {
-    emailCaptureForm.addEventListener('submit', function (e) {
+    emailCaptureForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       var emailInput = emailCaptureForm.querySelector('input[type="email"]');
       if (emailInput && emailInput.value.trim()) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (emailRegex.test(emailInput.value.trim())) {
-          // In production, submit to a backend endpoint
-          emailInput.value = '';
-          var msg = emailCaptureForm.querySelector('.capture-success');
-          if (msg) {
-            msg.style.display = 'block';
-            setTimeout(function () {
-              msg.style.display = 'none';
-            }, 4000);
+        if (!emailRegex.test(emailInput.value.trim())) return;
+
+        var msg = emailCaptureForm.parentElement.querySelector('.capture-success');
+        var submitButton = emailCaptureForm.querySelector('button[type="submit"]');
+        var originalButtonText = submitButton ? submitButton.textContent : '';
+
+        if (msg) msg.style.display = 'none';
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+        }
+
+        try {
+          await submitLead({
+            form: 'ebook',
+            email: emailInput.value.trim(),
+            page: window.location.href
+          });
+          showLeadStatus(msg, true, 'Thanks! We received your request and will follow up shortly.');
+          emailCaptureForm.reset();
+        } catch (error) {
+          showLeadStatus(msg, false, 'We could not send your request. Please try again.');
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
           }
         }
       }

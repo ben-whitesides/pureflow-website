@@ -435,7 +435,6 @@ section {
   padding: 80px 0 60px;
 }
 
-.page-residential .hero { background-image: linear-gradient(135deg, rgba(11,37,69,0.88), rgba(11,37,69,0.75), rgba(0,200,232,0.7)), url('../images/hero-residential.png'); background-size: cover; background-position: center; }
 .page-commercial .hero { background-image: linear-gradient(135deg, rgba(11,37,69,0.88), rgba(11,37,69,0.75), rgba(0,200,232,0.7)), url('../images/hero-commercial.png'); background-size: cover; background-position: center; }
 .page-about .hero { background-image: linear-gradient(135deg, rgba(11,37,69,0.88), rgba(11,37,69,0.75), rgba(0,200,232,0.7)), url('../images/hero-about.png'); background-size: cover; background-position: center; }
 .page-contact .hero { background-image: linear-gradient(135deg, rgba(11,37,69,0.88), rgba(11,37,69,0.75), rgba(0,200,232,0.7)), url('../images/hero-about.png'); background-size: cover; background-position: center; }
@@ -2265,24 +2264,6 @@ body {
   height: auto;
   border-radius: 16px;
   display: block;
-}
-.vf-play {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 76px; height: 76px;
-  border-radius: 50%;
-  background: rgba(0,200,232,0.92);
-  box-shadow: 0 8px 30px rgba(0,200,232,0.45);
-  display: flex; align-items: center; justify-content: center;
-  pointer-events: none; /* decorative only until the clip is wired in */
-}
-.vf-play::after {
-  content: "";
-  border-style: solid;
-  border-width: 13px 0 13px 22px;
-  border-color: transparent transparent transparent #fff;
-  margin-left: 5px;
 }
 .vf-eyebrow {
   font-size: 0.8rem; font-weight: 700; letter-spacing: 2px;

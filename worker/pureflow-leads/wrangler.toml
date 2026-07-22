@@ -5,8 +5,8 @@ workers_dev = true
 
 [[kv_namespaces]]
 binding = "LEADS"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "1836f6a15b9a4acbb7683d0807772ef9"
 
 [vars]
-LEAD_TO_EMAIL = "nick@pureflowut.com"
+LEAD_TO_EMAIL = "support@pureflowut.com"
 LEAD_FROM_EMAIL = "PureFlow Leads <leads@pureflowut.com>"
